@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profit Share Overview</title>
+    <style>
+        body {
+            font-family: "Segoe UI", sans-serif;
+            background: #eef1f5;
+            margin: 0;
+            padding: 25px;
+            color: #333;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+        }
+        .nav {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 25px;
+            justify-content: center;
+        }
+        .nav a {
+            text-decoration: none;
+            padding: 8px 14px;
+            border-radius: 999px;
+            background: #ffffff;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+            font-size: 14px;
+        }
+        .nav a:hover {
+            background: #3498db;
+            color: #fff;
+        }
+        .section-title {
+            text-align: center;
+            font-size: 26px;
+            font-weight: bold;
+            margin-bottom: 30px;
+            color: #2c3e50;
+        }
+        .box {
+            background: #fff;
+            padding: 25px;
+            border-radius: 14px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            margin-bottom: 30px;
+        }
+        h2 {
+            margin-top: 0;
+            color: #34495e;
+            font-size: 22px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #ecf0f1;
+        }
+        .highlight {
+            background: #f9f9f9;
+            border-left: 4px solid #3498db;
+            padding: 12px;
+            margin: 12px 0;
+            border-radius: 6px;
+        }
+        .percent-box {
+            background: #f0f7ff;
+            border-left: 5px solid #2980b9;
+            padding: 12px;
+            margin: 15px 0;
+            border-radius: 6px;
+        }
+        pre {
+            background: #f4f6f7;
+            padding: 12px;
+            border-radius: 6px;
+            overflow-x: auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+        th, td {
+            border: 1px solid #d0d0d0;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background: #ecf0f1;
+        }
+        tfoot td {
+            background: #fafafa;
+            font-weight: bold;
+        }
+        .button-container {
+            text-align: center;
+            margin: 30px 0;
+        }
+        .button-container a {
+            display: inline-block;
+            margin: 10px;
+            padding: 15px 30px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+            color: white;
+        }
+        .buyback-btn { background: #2980b9; }
+        .loss-btn { background: #c0392b; }
+        .buyback-btn:hover { background: #3498db; }
+        .loss-btn:hover { background: #e74c3c; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Navigation -->
+    <div class="nav">
+       
+        <a href="buyback.html">🔄 শেয়ার Buyback নীতি</a>
+        <a href="loss-policy.html">⚠️ Loss হলে কী হবে</a>
+    </div>
+
+    <div class="section-title">📘 Profit Share System – Overview</div>
+
+    <!-- নীতিমালা -->
+    <div class="box">
+        <h2>১. নীতিমালা (Policy)</h2>
+        <p>শেয়ার কেনার মাধ্যমে বিনিয়োগকারী কোম্পানির মালিকানা পাবেন না। কোম্পানির ১০০% মালিকানা প্রতিষ্ঠাতা/Owner-এর কাছে থাকবে।</p>
+        <div class="highlight">
+            বিনিয়োগকারীরা শুধুমাত্র <strong>Profit Share Holder</strong> হিসেবে লাভের নির্দিষ্ট অংশ পাবেন। এটি এক ধরনের friendly investment system।
+        </div>
+        <p>লাভ মাসিক বা দ্বিমাসিক basis-এ হিসাব করা হবে।</p>
+        <div class="percent-box">
+            <strong>Owner Share:</strong> মোট লাভের ৬৫%<br>
+            <strong>Shareholder Pool:</strong> মোট লাভের ৩৫%
+        </div>
+        <p>ব্যবসা পরিচালনা, নীতিমালা পরিবর্তন ও অপারেশন সংক্রান্ত সব সিদ্ধান্ত Owner-এর হাতে থাকবে।</p>
+    </div>
+
+    <!-- শতাংশ ও ফর্মুলা -->
+    <div class="box">
+        <h2>২. শতাংশ বণ্টন ও হিসাব (Percent & Formula)</h2>
+        <p>প্রতিটি cycle-এর লাভ থেকে শেয়ারহোল্ডারদের অংশ হিসাব হবে এই ফর্মুলা অনুযায়ী:</p>
+        <pre>
+শেয়ারহোল্ডারের লাভ =
+(মোট লাভ × 35%) ÷ মোট শেয়ার × ব্যক্তির শেয়ার সংখ্যা
+        </pre>
+        <div class="highlight">
+            ৩৫% পুল হলো মোট শেয়ারহোল্ডারদের জন্য একসাথে বরাদ্দ অংশ।  
+            প্রত্যেকে নিজের শেয়ার সংখ্যার অনুপাতে এখান থেকে লাভ পায়।
+        </div>
+    </div>
+
+    <!-- উদাহরণ -->
+    <div class="box">
+        <h2>৩. উদাহরণ (Example)</h2>
+        <p><strong>ধরা যাক:</strong></p>
+        <ul>
+            <li>মোট শেয়ার = ৬</li>
+            <li>প্রতি শেয়ার মূল্য = ১০,০০০ টাকা</li>
+            <li>মোট বিনিয়োগ = ৬০,০০০ টাকা</li>
+            <li>২ মাসের মোট লাভ = ৬০,০০০ টাকা</li>
+        </ul>
+
+        <div class="highlight">
+            Owner-এর অংশ = ৬৫% × ৬০,০০০ = ৩৯,০০০ টাকা<br>
+            শেয়ারহোল্ডারদের অংশ = ৩৫% × ৬০,০০০ = ২১,০০০ টাকা
+        </div>
+
+        <p><strong>প্রতি শেয়ারের লাভ:</strong> ২১,০০০ ÷ ৬ = ৩,৫০০ টাকা</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>শেয়ারহোল্ডার</th>
+                    <th>শেয়ার সংখ্যা</th>
+                    <th>লাভ (২ মাসে)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>A</td><td>১</td><td>৩,৫০০</td></tr>
+                <tr><td>B</td><td>১</td><td>৩,৫০০</td></tr>
+                <tr><td>C</td><td>১</td><td>৩,৫০০</td></tr>
+                <tr><td>D</td><td>১</td><td>৩,৫০০</td></tr>
+                <tr><td>E</td><td>১</td><td>৩,৫০০</td></tr>
+                <tr><td>F</td><td>১</td><td>৩,৫০০</td></tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td><strong>মোট</strong></td>
+                    <td><strong>৬</strong></td>
+                    <td><strong>২১,০০০</strong></td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+    <!-- মাঝখানে বোতাম লিঙ্ক -->
+    <div class="button-container">
+        <a href="buyback.html" class="buyback-btn">🔄 শেয়ার Buyback নীতি</a>
+    </div>
+
+</div>
+
+</body>
+</html>
